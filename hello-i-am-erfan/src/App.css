@@ -1,5 +1,18 @@
 @import "tailwindcss";
 
 @theme {
-  --color-btnBlue: #176ae5;
+  --color-lightWhite: #f0f6fc;
+  --color-background: #0d1117;
+  --color-backgroundLine: #00c7ff;
+}
+
+.nav-link a.active {
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #f78166;
+}
+
+body {
+  background-color: var(--color-background);
 }
