@@ -3,7 +3,9 @@
 @theme {
   --color-lightWhite: #f0f6fc;
   --color-background: #0d1117;
+  --color-secondaryBackground: #212830;
   --color-backgroundLine: #00c7ff;
+  --color-lightGrey: #9098a1;
 }
 
 .nav-link a.active {
@@ -14,5 +16,5 @@
 }
 
 body {
-  background-color: var(--color-background);
+  background-color: #0e1117;
 }
