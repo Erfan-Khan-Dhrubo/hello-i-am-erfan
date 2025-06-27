@@ -1,9 +1,10 @@
 import React from "react";
+import LeftTop from "./LeftTop";
 
 const LeftSideHome = () => {
   return (
-    <div className="bg-blue-400">
-      <h1>World</h1>
+    <div>
+      <LeftTop></LeftTop>
     </div>
   );
 };

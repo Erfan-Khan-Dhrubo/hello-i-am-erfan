@@ -9,10 +9,10 @@ const Home = () => {
       <TopHome></TopHome>
       <div className="flex gap-6 mt-6">
         <div className="basis-3/4">
-          <RightSideHome />
+          <LeftSideHome />
         </div>
         <div className="basis-1/4">
-          <LeftSideHome />
+          <RightSideHome />
         </div>
       </div>
     </div>

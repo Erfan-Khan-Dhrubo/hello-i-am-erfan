@@ -36,7 +36,7 @@ const TopHome = () => {
             </button>
           </a>
 
-          <a href="#" target="_blank">
+          <a href="https://github.com/Erfan-Khan-Dhrubo" target="_blank">
             <button className="btn bg-secondaryBackground px-2 py-1 border border-lightGrey rounded-lg">
               <FaGithub className="text-lightGrey" size={28} />
             </button>
