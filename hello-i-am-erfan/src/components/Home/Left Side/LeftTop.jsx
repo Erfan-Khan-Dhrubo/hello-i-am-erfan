@@ -6,7 +6,7 @@ import { PiBracketsAngleBold } from "react-icons/pi";
 const LeftTop = () => {
   return (
     <div className="flex justify-between items-center">
-      <div className="flex gap-4">
+      <div className="flex gap-2">
         <div>
           <button className="btn bg-secondaryBackground px-3 py-1 border border-lightGrey rounded-md flex justify-center items-center gap-2">
             <FaCodeBranch className="text-lightGrey" size={16} />{" "}

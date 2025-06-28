@@ -7,7 +7,7 @@ import { FaRegFile } from "react-icons/fa";
 
 const LeftInfo = () => {
   return (
-    <div className="mt-30 border border-backgroundLine rounded-lg overflow-hidden">
+    <div className="border border-backgroundLine rounded-lg overflow-hidden">
       <div className="flex gap-6 items-center border-b border-backgroundLine  bg-secondaryBackground  p-4">
         <div className="flex gap-2 items-center">
           <div className="w-5 h-5">
@@ -51,18 +51,26 @@ const LeftInfo = () => {
         <div className="basis-1/3 flex items-center gap-2">
           <FaRegFile className="text-lightGrey" /> <a href="">README.md</a>
         </div>
-        <div className="basis-1/3 text-lightGrey">my work experience</div>
+        <div className="basis-1/3 text-lightGrey">my portfolio overview</div>
         <div className="basis-1/3 text-right text-lightGrey">
-          2025 - present
+          {new Date().toLocaleDateString("en-US", {
+            month: "2-digit",
+            day: "2-digit",
+            year: "numeric",
+          })}
         </div>
       </div>
       <div className="flex items-center p-3 border-t border-backgroundLine">
         <div className="basis-1/3 flex items-center gap-2">
-          <FaRegFile className="text-lightGrey" /> <a href="">experience</a>
+          <FaRegFile className="text-lightGrey" /> <a href="">resume.pdf</a>
         </div>
-        <div className="basis-1/3 text-lightGrey">my work experience</div>
+        <div className="basis-1/3 text-lightGrey">my professional resume</div>
         <div className="basis-1/3 text-right text-lightGrey">
-          2025 - present
+          {new Date().toLocaleDateString("en-US", {
+            month: "2-digit",
+            day: "2-digit",
+            year: "numeric",
+          })}
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React from "react";
 
 const SingleLanguage = (language) => {
-  const { name, color } = language.language;
+  const { name, color, percentage } = language.language;
 
   return (
     <div className="flex gap-2 items-center">
@@ -11,7 +11,10 @@ const SingleLanguage = (language) => {
           backgroundColor: color,
         }}
       ></div>
-      <div className="text-sm font-medium">{name}</div>
+      <div className="text-xs font-medium flex gap-2">
+        <span>{name}</span>
+        <span className="text-lightGrey">{percentage} %</span>
+      </div>
     </div>
   );
 };

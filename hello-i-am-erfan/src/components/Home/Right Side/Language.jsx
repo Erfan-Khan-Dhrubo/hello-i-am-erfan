@@ -6,51 +6,49 @@ const Language = () => {
   const temp = [
     {
       id: 1,
-      name: "Python",
-      color: "#FF6F61",
-      value: 10,
+      name: "C#",
+      color: "#178600",
+      value: 39,
+      percentage: 39.53,
     },
+
     {
       id: 2,
-      name: "HTML",
-      color: "#FFA07A",
+      name: "HTML/CSS",
+      color: "#E34C26",
       value: 20,
+      percentage: 20.49,
     },
     {
       id: 3,
-      name: "CSS",
-      color: "#6495ED",
-      value: 10,
+      name: "JavaScript",
+      color: "#F1E05A",
+      value: 16,
+      percentage: 16.12,
     },
+
     {
       id: 4,
-      name: "JavaScript",
-      color: "#FFD700",
+      name: "PHP",
+      color: "#4F5D95",
       value: 10,
+      percentage: 10.07,
     },
+
     {
       id: 5,
-      name: "C#",
-      color: "#8A2BE2",
-      value: 10,
+      name: "Python",
+      color: "#3572A5",
+      value: 8,
+      percentage: 7.12,
     },
+
     {
       id: 6,
-      name: "PHP",
-      color: "#9370DB",
-      value: 5,
-    },
-    {
-      id: 7,
-      name: "SQL",
-      color: "#20B2AA",
-      value: 5,
-    },
-    {
-      id: 8,
       name: "Assembly",
-      color: "#A52A2A",
-      value: 30,
+      color: "#6E4C13",
+      value: 7,
+      percentage: 6.66,
     },
   ];
 

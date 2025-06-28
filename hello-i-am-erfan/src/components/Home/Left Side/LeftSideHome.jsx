@@ -4,7 +4,7 @@ import LeftInfo from "./LeftInfo";
 
 const LeftSideHome = () => {
   return (
-    <div>
+    <div className="flex flex-col gap-4">
       <LeftTop></LeftTop>
       <LeftInfo></LeftInfo>
     </div>
