@@ -5,7 +5,7 @@ import { FaRocket } from "react-icons/fa";
 
 const AboutMe = () => {
   return (
-    <div className="flex py-12 px-4">
+    <div className="flex gap-4 py-12 ">
       <div className="basis-1/2 flex justify-center items-center">
         <img
           src="/Images/profile.jpg"
@@ -13,7 +13,7 @@ const AboutMe = () => {
           className="w-80 h-80 object-cover rounded-full"
         />
       </div>
-      <div className="basis-1/2 p-4 flex flex-col gap-2 justify-center">
+      <div className="basis-1/2  flex flex-col gap-2 justify-center">
         <p className="text-lightGrey">
           <BsEmojiLaughingFill className="inline mr-2 mb-1" />
           Hi, I'm <span className="text-white text-xl">Erfan Khan</span> — a
