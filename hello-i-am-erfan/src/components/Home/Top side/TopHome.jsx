@@ -1,5 +1,4 @@
 import React from "react";
-import { Mail } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";

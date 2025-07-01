@@ -3,6 +3,7 @@ import { FiBookOpen } from "react-icons/fi";
 import AboutMe from "./AboutMe";
 import Experience from "./Experience/Experience";
 import Skills from "./Skills/Skills";
+import ConnectMe from "./ConnectMe";
 
 const Readme = () => {
   return (
@@ -16,12 +17,14 @@ const Readme = () => {
         <div className="border-b py-4 border-backgroundLine flex-1"></div>
       </div>
 
-      <div className="flex flex-col gap-8 p-10">
+      <div className="flex flex-col gap-14 p-10">
         <AboutMe></AboutMe>
         <div className="border-b border-backgroundLine w-full"></div>
         <Experience></Experience>
         <div className="border-b border-backgroundLine w-full"></div>
         <Skills></Skills>
+        <div className="border-b border-backgroundLine w-full"></div>
+        <ConnectMe></ConnectMe>
       </div>
     </div>
   );
