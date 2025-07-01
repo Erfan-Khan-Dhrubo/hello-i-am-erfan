@@ -118,45 +118,53 @@ const Web = () => {
   );
 
   return (
-    <div className="flex gap-4">
-      <div className="flex gap-4 flex-wrap basis-3/4">
+    <div>
+      <div className="grid grid-cols-3 gap-4">
         <Suspense fallback={<span>Loading ......</span>}>
-          {filteredSkills.map((skill) => (
-            <Logo skill={skill} key={skill.id}></Logo>
-          ))}
+          {filteredSkills.map((skill, index) => {
+            if (index === 2) {
+              return (
+                <React.Fragment key={skill.id}>
+                  <div className="col-span-1 row-span-2 flex items-center justify-center">
+                    <style>
+                      {`
+                @keyframes globe-rotate-move {
+                  0% {
+                    transform: rotateY(0deg);
+                  }
+                  25% {
+                    transform: rotateY(90deg);
+                  }
+                  50% {
+                    transform: rotateY(180deg);
+                  }
+                  75% {
+                    transform: rotateY(270deg);
+                  }
+                  100% {
+                    transform: rotateY(360deg);
+                  }
+                }
+                .animate-globe {
+                  animation: globe-rotate-move 4s linear infinite;
+                  transform-style: preserve-3d;
+                  will-change: transform;
+                  display: inline-block;
+                }
+              `}
+                    </style>
+                    <span className="animate-globe">
+                      <FaGlobe size={120} />
+                    </span>
+                  </div>
+                  <Logo skill={skill} />
+                </React.Fragment>
+              );
+            } else {
+              return <Logo skill={skill} key={skill.id} />;
+            }
+          })}
         </Suspense>
-      </div>
-      <div className="basis-1/4 flex items-center">
-        <style>
-          {`
-            @keyframes globe-rotate-move {
-              0% {
-                transform: rotateY(0deg) translateY(0px);
-              }
-              25% {
-                transform: rotateY(90deg) translateY(-150px);
-              }
-              50% {
-                transform: rotateY(180deg) translateY(0px);
-              }
-              75% {
-                transform: rotateY(270deg) translateY(150px);
-              }
-              100% {
-                transform: rotateY(360deg) translateY(0px);
-              }
-            }
-            .animate-globe {
-              animation: globe-rotate-move 4s linear infinite;
-              transform-style: preserve-3d;
-              will-change: transform;
-              display: inline-block;
-            }
-          `}
-        </style>
-        <span className="animate-globe">
-          <FaGlobe size={120} />
-        </span>
       </div>
     </div>
   );
