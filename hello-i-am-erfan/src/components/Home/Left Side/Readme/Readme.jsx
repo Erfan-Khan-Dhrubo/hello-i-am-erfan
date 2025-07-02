@@ -4,6 +4,7 @@ import AboutMe from "./AboutMe";
 import Experience from "./Experience/Experience";
 import Skills from "./Skills/Skills";
 import ConnectMe from "./ConnectMe";
+import Projects from "./Projects/Projects";
 
 const Readme = () => {
   return (
@@ -21,6 +22,8 @@ const Readme = () => {
         <AboutMe></AboutMe>
         <div className="border-b border-backgroundLine w-full"></div>
         <Experience></Experience>
+        <div className="border-b border-backgroundLine w-full"></div>
+        <Projects></Projects>
         <div className="border-b border-backgroundLine w-full"></div>
         <Skills></Skills>
         <div className="border-b border-backgroundLine w-full"></div>
