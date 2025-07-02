@@ -2,14 +2,14 @@ import React, { useRef, useEffect, useState } from "react";
 
 // Simple Dino Runner Game (auto-jump, no user control)
 // SLOW VERSION
-const GAME_HEIGHT = 150;
+const GAME_HEIGHT = 120;
 const GROUND_Y = 120;
 const DINO_WIDTH = 44;
 const DINO_HEIGHT = 47;
-const OBSTACLE_WIDTH = 20;
-const OBSTACLE_HEIGHT = 40;
-const GRAVITY = 0.13; // Lower gravity for a smoother, higher jump
-const JUMP_VELOCITY = -5.2; // Higher jump velocity for a perfect arc
+const OBSTACLE_WIDTH = 15;
+const OBSTACLE_HEIGHT = 30;
+const GRAVITY = 0.1; // Lower gravity for a smoother, higher jump
+const JUMP_VELOCITY = -3.95; // Higher jump velocity for a perfect arc
 const OBSTACLE_GAP = 200;
 const OBSTACLE_SPEED = 1.5; // Keep obstacle speed unchanged
 const BASE_GAME_WIDTH = 600; // Used for scaling
@@ -266,9 +266,8 @@ const GameUI = () => {
           width: "100%",
           height: `${GAME_HEIGHT * (canvasWidth / BASE_GAME_WIDTH)}px`,
           maxWidth: "100%",
-          border: "1px solid #333",
+          borderBottom: "1px solid #9098a1",
           background: PAGE_BG_COLOR, // changed from "#f7f7f7" to match your page color
-          borderRadius: "8px",
           display: "block",
         }}
       />
