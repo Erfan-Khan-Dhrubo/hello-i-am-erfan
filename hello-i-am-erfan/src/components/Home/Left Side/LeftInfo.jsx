@@ -19,39 +19,45 @@ const LeftInfo = () => {
           </div>
           <div className="text-white  font-semibold">Erfan Khan</div>
         </div>
-        <div className="flex gap-1 text-lightGrey items-center">
+        <div className="sm:flex hidden  gap-1 text-lightGrey items-center">
           <IoGameController /> <span>Junior Game Developer</span>
         </div>
-        <div className="flex gap-1 text-lightGrey items-center">
+        <div className="lg:flex hidden gap-1 text-lightGrey items-center">
           <MdWork /> <span>Frontend Developer</span>
         </div>
-        <div className="flex gap-1 text-lightGrey items-center">
+        <div className="lg:flex hidden gap-1 text-lightGrey items-center">
           <FaLocationDot /> <span>Dhaka, Bangladesh</span>
         </div>
       </div>
-      <div className="flex items-center p-3">
+      <div className="flex justify-between items-center p-3">
         <div className="basis-1/3 flex items-center gap-2">
           <FaFolder className="text-lightGrey" /> <a href="">experience</a>
         </div>
-        <div className="basis-1/3 text-lightGrey">my work experience</div>
-        <div className="basis-1/3 text-right text-lightGrey">
+        <div className="basis-1/3 text-lightGrey sm:flex hidden ">
+          my work experience
+        </div>
+        <div className="basis-1/3 text-right text-lightGrey ">
           2025 - present
         </div>
       </div>
-      <div className="flex items-center p-3 border-t border-backgroundLine">
+      <div className="flex justify-between items-center p-3 border-t border-backgroundLine">
         <div className="basis-1/3 flex items-center gap-2">
           <FaFolder className="text-lightGrey" /> <a href="">projects</a>
         </div>
-        <div className="basis-1/3 text-lightGrey">my personal Projects</div>
+        <div className="basis-1/3 text-lightGrey sm:flex hidden ">
+          my personal Projects
+        </div>
         <div className="basis-1/3 text-right text-lightGrey">
           2023 - present
         </div>
       </div>
-      <div className="flex items-center p-3 border-t border-backgroundLine">
+      <div className="flex justify-between items-center p-3 border-t border-backgroundLine">
         <div className="basis-1/3 flex items-center gap-2">
           <FaRegFile className="text-lightGrey" /> <a href="">README.md</a>
         </div>
-        <div className="basis-1/3 text-lightGrey">my portfolio overview</div>
+        <div className="basis-1/3 text-lightGrey sm:flex hidden ">
+          my portfolio overview
+        </div>
         <div className="basis-1/3 text-right text-lightGrey">
           {new Date().toLocaleDateString("en-US", {
             month: "2-digit",
@@ -60,11 +66,13 @@ const LeftInfo = () => {
           })}
         </div>
       </div>
-      <div className="flex items-center p-3 border-t border-backgroundLine">
+      <div className="flex justify-between items-center p-3 border-t border-backgroundLine">
         <div className="basis-1/3 flex items-center gap-2">
           <FaRegFile className="text-lightGrey" /> <a href="">resume.pdf</a>
         </div>
-        <div className="basis-1/3 text-lightGrey">my professional resume</div>
+        <div className="basis-1/3 text-lightGrey sm:flex hidden ">
+          my professional resume
+        </div>
         <div className="basis-1/3 text-right text-lightGrey">
           {new Date().toLocaleDateString("en-US", {
             month: "2-digit",

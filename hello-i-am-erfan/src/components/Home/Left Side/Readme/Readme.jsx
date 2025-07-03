@@ -18,7 +18,7 @@ const Readme = () => {
         <div className="border-b py-4 border-backgroundLine flex-1"></div>
       </div>
 
-      <div className="flex flex-col gap-14 p-10">
+      <div className="flex flex-col gap-14 md:p-10 sm:p-8 p-4">
         <AboutMe></AboutMe>
         <div className="border-b border-backgroundLine w-full"></div>
         <Experience></Experience>

@@ -39,7 +39,7 @@ const Logo = ({ skill }) => {
   console.log(skill);
   const { name, type } = skill;
   return (
-    <div className="flex gap-4 text-lightGrey border border-lightGrey rounded-md pl-4  h-24 transition-colors duration-200 hover:border-backgroundLine group">
+    <div className="flex md:gap-4 gap-2 text-lightGrey border border-lightGrey rounded-md md:pl-4 pl-2  h-24 transition-colors duration-200 hover:border-backgroundLine group">
       <div className="flex items-center">
         {Icon && (
           <Icon
@@ -50,7 +50,7 @@ const Logo = ({ skill }) => {
       </div>
       <div className="flex flex-col justify-center">
         <p className="text-white">{name}</p>
-        <p className="text-sm">{type}</p>
+        <p className="text-sm md:flex hidden">{type}</p>
       </div>
     </div>
   );

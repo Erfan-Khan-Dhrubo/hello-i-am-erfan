@@ -6,9 +6,10 @@ const WorkDetail = () => {
   return (
     <div>
       <div className="flex flex-col gap-2">
-        <h4 className="flex gap-2 items-center text-xl">
-          <IoSettings />
-          Bad Wifi Interactive (April 2025 - Present)
+        <h4 className="sm:text-xl text-lg">
+          <IoSettings className="inline mr-2 mb-1" />
+          Bad Wifi Interactive{" "}
+          <span className="block sm:inline">(April 2025 - Present)</span>
         </h4>
         <p className="text-lightGrey">
           <FaCheckCircle className="inline mr-2 mb-1" />

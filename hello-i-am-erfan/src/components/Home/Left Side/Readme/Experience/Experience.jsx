@@ -9,10 +9,10 @@ const Experience = () => {
       <div className=" flex flex-col gap-6">
         <h2 className="text-3xl">Experience</h2>
         <div className="flex">
-          <div className="basis-3/4">
+          <div className="sm:basis-3/4">
             <WorkDetail></WorkDetail>
           </div>
-          <div className="basis-1/4 flex justify-center items-center">
+          <div className="basis-1/4 sm:flex hidden justify-center items-center">
             <IoGameController size={100} />
           </div>
         </div>

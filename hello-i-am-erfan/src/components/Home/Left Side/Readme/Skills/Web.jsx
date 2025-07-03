@@ -1,8 +1,18 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useState, useEffect } from "react";
 import Logo from "./Logo";
 import { FaGlobe } from "react-icons/fa";
 
 const Web = () => {
+  const [isMd, setIsMd] = useState(() => window.innerWidth >= 768);
+
+  useEffect(() => {
+    const handleResize = () => setIsMd(window.innerWidth >= 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const globeIndex = isMd ? 2 : 1;
+
   const temp = {
     skills: [
       {
@@ -119,42 +129,37 @@ const Web = () => {
 
   return (
     <div>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid md:grid-cols-3 grid-cols-2 gap-4">
         <Suspense fallback={<span>Loading ......</span>}>
           {filteredSkills.map((skill, index) => {
-            if (index === 2) {
+            if (index === globeIndex) {
               return (
                 <React.Fragment key={skill.id}>
-                  <div className="col-span-1 row-span-2 flex items-center justify-center">
+                  <div className="col-span-1 md:row-span-2 row-span-1 flex items-center justify-center">
                     <style>
                       {`
-                @keyframes globe-rotate-move {
-                  0% {
-                    transform: rotateY(0deg);
-                  }
-                  25% {
-                    transform: rotateY(90deg);
-                  }
-                  50% {
-                    transform: rotateY(180deg);
-                  }
-                  75% {
-                    transform: rotateY(270deg);
-                  }
-                  100% {
-                    transform: rotateY(360deg);
-                  }
-                }
-                .animate-globe {
-                  animation: globe-rotate-move 4s linear infinite;
-                  transform-style: preserve-3d;
-                  will-change: transform;
-                  display: inline-block;
-                }
-              `}
+                        @keyframes globe-rotate-move {
+                          0% { transform: rotateY(0deg); }
+                          25% { transform: rotateY(90deg); }
+                          50% { transform: rotateY(180deg); }
+                          75% { transform: rotateY(270deg); }
+                          100% { transform: rotateY(360deg); }
+                        }
+                        .animate-globe {
+                          animation: globe-rotate-move 4s linear infinite;
+                          transform-style: preserve-3d;
+                          will-change: transform;
+                          display: inline-block;
+                        }
+                      `}
                     </style>
                     <span className="animate-globe">
-                      <FaGlobe size={120} />
+                      <span className="block md:hidden">
+                        <FaGlobe size={60} />
+                      </span>
+                      <span className="hidden md:block">
+                        <FaGlobe size={120} />
+                      </span>
                     </span>
                   </div>
                   <Logo skill={skill} />

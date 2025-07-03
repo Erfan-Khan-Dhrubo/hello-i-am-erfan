@@ -5,7 +5,7 @@ import { FaRocket } from "react-icons/fa";
 
 const AboutMe = () => {
   return (
-    <div className="flex gap-4 pt-4 ">
+    <div className="flex flex-col sm:flex-row gap-4 pt-4 ">
       <div className="basis-1/2 flex justify-center items-center">
         <img
           src="/Images/profile.jpg"

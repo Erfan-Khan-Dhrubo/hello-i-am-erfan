@@ -40,7 +40,7 @@ const WebProject = () => {
   const projects = temp.projects;
 
   return (
-    <div className="grid grid-cols-2 items-stretch gap-6">
+    <div className="grid md:grid-cols-2 grid-cols-1 place-items-center items-stretch gap-6">
       <Suspense fallback={<span>Loading ......</span>}>
         {projects.map((project, index) => (
           <ProjectCard project={project} key={index}></ProjectCard>

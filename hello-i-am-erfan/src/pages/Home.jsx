@@ -5,9 +5,9 @@ import TopHome from "../components/Home/Top side/TopHome";
 
 const Home = () => {
   return (
-    <div className="text-white w-8/10 mx-auto">
+    <div className="text-white lg:w-8/10 w-9/10 mx-auto">
       <TopHome></TopHome>
-      <div className="flex gap-6 mt-6">
+      <div className="flex flex-col lg:flex-row lg:gap-6 gap-10 mt-6">
         <div className="basis-3/4">
           <LeftSideHome />
         </div>

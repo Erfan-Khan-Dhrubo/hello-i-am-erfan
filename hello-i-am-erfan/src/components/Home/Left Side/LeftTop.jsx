@@ -13,12 +13,12 @@ const LeftTop = () => {
             <span className="text-sm font-semibold">main</span>
           </button>
         </div>
-        <div className="px-3 py-1  flex justify-center items-center gap-1">
+        <div className="px-3 py-1  sm:flex hidden justify-center items-center gap-1">
           <FaCodeBranch className="text-lightGrey" size={16} />{" "}
           <span className="text-white"> 1</span>
           <span className="text-lightGrey text-sm font-semibold">Branch</span>
         </div>
-        <div className="px-3 py-1  flex justify-center items-center gap-1">
+        <div className="px-3 py-1  sm:flex hidden justify-center items-center gap-1">
           <LuTag className="text-lightGrey" size={16} />{" "}
           <span className="text-white"> 0</span>
           <span className="text-lightGrey text-sm font-semibold">Tags</span>
