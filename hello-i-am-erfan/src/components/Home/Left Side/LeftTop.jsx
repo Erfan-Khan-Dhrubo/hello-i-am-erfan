@@ -25,7 +25,10 @@ const LeftTop = () => {
         </div>
       </div>
       <div>
-        <a href="#" target="_blank">
+        <a
+          href="https://github.com/Erfan-Khan-Dhrubo/hello-i-am-erfan"
+          target="_blank"
+        >
           <button className="btn bg-btnGreen px-3 py-1 rounded-sm flex justify-center items-center gap-2 text-sm font-semibold">
             <PiBracketsAngleBold size={16} /> <span>Code</span>
           </button>

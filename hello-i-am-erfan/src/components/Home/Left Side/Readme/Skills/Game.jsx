@@ -155,7 +155,7 @@ const Game = () => {
                     </style>
                     <span className="animate-globe">
                       <span className="block md:hidden">
-                        <IoGameController size={60} />
+                        <IoGameController size={40} />
                       </span>
                       <span className="hidden md:block">
                         <IoGameController size={120} />

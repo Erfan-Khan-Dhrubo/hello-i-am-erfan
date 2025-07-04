@@ -155,7 +155,7 @@ const Other = () => {
                     </style>
                     <span className="animate-globe">
                       <span className="block md:hidden">
-                        <FaTools size={60} />
+                        <FaTools size={26} />
                       </span>
                       <span className="hidden md:block">
                         <FaTools size={120} />

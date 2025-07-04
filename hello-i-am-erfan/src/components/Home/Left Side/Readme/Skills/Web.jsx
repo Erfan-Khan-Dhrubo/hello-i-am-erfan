@@ -155,7 +155,7 @@ const Web = () => {
                     </style>
                     <span className="animate-globe">
                       <span className="block md:hidden">
-                        <FaGlobe size={60} />
+                        <FaGlobe size={38} />
                       </span>
                       <span className="hidden md:block">
                         <FaGlobe size={120} />
